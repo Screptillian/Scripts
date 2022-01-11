@@ -48,6 +48,14 @@ sudo snap install discord
 sudo snap install spotify
 sudo snap install codium --classic
 
+#obsidian
+
+cd /tmp
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v0.13.19/obsidian_0.13.19_amd64.snap
+sudo snap install /tmp/obsidian_0.13.19_amd64.snap --dangerous
+cd ~
+
+
 #iptables
 iptables -A INPUT -p tcp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection:"
 iptables -A INPUT -p udp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection:"
