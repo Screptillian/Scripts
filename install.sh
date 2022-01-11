@@ -9,7 +9,7 @@ sudo apt update -y
 sudo apt upgrade -y
 
 #Extract rockyou.txt
-sudo unzip /usr/share/wordlists/rockyou.txt /usr/share/wordlists/rockyou.txt
+sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 sudo mkdir /usr/share/tools
 
 #Github Repos
@@ -75,19 +75,16 @@ sudo apt install gnupg -y
 sudo apt install lsb-release -y
 sudo apt install curl -y
 
-sudo  curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-
 sudo apt update
 sudo apt install docker-ce -y
 sudo apt install docker-ce-cli -y
 sudo apt install containerd.io -y
 sudo apt install docker.io -y
 
-
-sudo mkdir -r /opt/bloodhound/data
+#Bloodhound
 
 sudo docker pull specterops/bloodhound-neo4j
-#sudo docker run -p 7474:7474 -p 7687:7687 specterops/bloodhound-neo4j
+#alias bloodhound ='sudo docker run -p 7474:7474 -p 7687:7687 specterops/bloodhound-neo4j' (See bashrc/zshrc)
 
 #cleanup
 apt autoremove
