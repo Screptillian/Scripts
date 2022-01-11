@@ -47,17 +47,11 @@ sudo systemctl restart snapd
 sudo snap install discord
 sudo snap install spotify
 sudo snap install codium --classic
-sudo snap install obsidian --dangerous
-
-
-#Codium v2
-sudo apt install codium -y
 
 #iptables
 iptables -A INPUT -p tcp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection:"
 iptables -A INPUT -p udp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection:"
 iptables -A INPUT -p icmp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection:"
-
 
 #bashrc/zshrc config
 curl https://raw.githubusercontent.com/Screptillian/Scripts/main/.bashrc > ~/.bashrc
