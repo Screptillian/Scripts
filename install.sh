@@ -69,7 +69,6 @@ sudo apt install gnupg -y
 sudo apt install lsb-release -y
 sudo apt install curl -y
 
-sudo apt update
 sudo apt install docker-ce -y
 sudo apt install docker-ce-cli -y
 sudo apt install containerd.io -y
