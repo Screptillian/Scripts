@@ -9,19 +9,13 @@ sudo unzip /usr/share/wordlists/rockyou.txt /usr/share/wordlists/rockyou.txt
 sudo mkdir /usr/share/tools
 
 
-sudo git clone https://github.com/danielmiessler/SecLists /usr/share/wordlists
-
-sudo git clone https://github.com/flozz/p0wny-shell /usr/share/tools/
-
-sudo git clone https://github.com/SecureAuthCorp/impacket /opt/
-
-sudo git clone https://github.com/ropnop/kerbrute /opt/
-
-sudo git clone https://github.com/tmux-plugins/tmux-logging/ /opt/
-
-sudo git clone https://github.com/21y4d/nmapAutomator /opt/
-
-sudo git clone https://github.com/Tib3rius/AutoRecon /opt/
+sudo git clone https://github.com/danielmiessler/SecLists /usr/share/wordlists/SecLists
+sudo git clone https://github.com/flozz/p0wny-shell /usr/share/tools/p0wny-shell
+sudo git clone https://github.com/SecureAuthCorp/impacket /opt/impacket
+sudo git clone https://github.com/ropnop/kerbrute /opt/kerbrute
+sudo git clone https://github.com/tmux-plugins/tmux-logging/ /opt/tmux-logging/
+sudo git clone https://github.com/21y4d/nmapAutomator /usr/share/tools/nmapAutomator
+sudo git clone https://github.com/Tib3rius/AutoRecon /usr/share/tools/AutoRecon
 
 sudo apt-get install tmux -y
 touch ~/.tmux.conf
@@ -57,13 +51,13 @@ sudo snap install obsidian --dangerous
 
 sudo apt install codium -y
 
-iptables -A INPUT -p tcp,udp,icmp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection:"
+iptables -A INPUT -p tcp/udp/icmp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection:"
 
 curl https://raw.githubusercontent.com/Screptillian/Scripts/main/.bashrc > ~/.bashrc
+curl https://raw.githubusercontent.com/Screptillian/Scripts/main/.zshrc > ~/.zshrc
 
-curl https://github.com/Screptillian/Scripts/blob/main/.zshrc > ~/.zshrc
-
-curl https://github.com/Screptillian/Scripts/blob/main/smb.conf > /etc/samba/smb.conf
+sudo chmod +w /etc/samba/smb.conf
+sudo curl https://github.com/Screptillian/Scripts/blob/main/smb.conf > /etc/samba/smb.conf
 
 sudo apt install docker -y
 sudo apt install ca-certificates -y
@@ -83,7 +77,7 @@ sudo apt install docker.io -y
 sudo mkdir -r /opt/bloodhound/data
 
 sudo docker pull specterops/bloodhound-neo4j
-sudo docker run -p 7474:7474 -p 7687:7687 specterops/bloodhound-neo4j
+#sudo docker run -p 7474:7474 -p 7687:7687 specterops/bloodhound-neo4j
 
 apt autoremove
 #shutdown -r now
