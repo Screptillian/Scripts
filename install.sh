@@ -57,9 +57,11 @@ cd ~
 
 
 #iptables
-iptables -A INPUT -p tcp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection:"
-iptables -A INPUT -p udp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection:"
-iptables -A INPUT -p icmp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection:"
+sudo iptables -A INPUT -p tcp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection:"
+sudo iptables -A INPUT -p udp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection:"
+sudo iptables -A INPUT -p icmp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection:"
+
+#You can view the logs in /var/log/messages
 
 #bashrc/zshrc config
 curl https://raw.githubusercontent.com/Screptillian/Scripts/main/.bashrc > ~/.bashrc
@@ -68,6 +70,17 @@ curl https://raw.githubusercontent.com/Screptillian/Scripts/main/.zshrc > ~/.zsh
 #smb config
 sudo chmod +w /etc/samba/smb.conf
 sudo curl https://github.com/Screptillian/Scripts/blob/main/smb.conf > /etc/samba/smb.conf
+
+#google chrome
+
+cd /tmp
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+cd ~
+
+#Firefox Add-Ons
+firefox https://addons.mozilla.org/firefox/downloads/file/3890260/wappalyzer-6.9.11-fx.xpi
+firefox https://addons.mozilla.org/firefox/downloads/file/3616824/foxyproxy_standard-7.5.1-an+fx.xpi
 
 #docker for bloodhound
 
