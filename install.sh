@@ -12,8 +12,28 @@ sudo apt upgrade -y
 sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 sudo mkdir /usr/share/tools
 
+#Misc
+sudo apt install sherlock -y
+sudo pip3 install pycryptodome
+sudo pip3 install pyarmor
+sudo pip3 install python-nmap
+sudo pip3 install click
+sudo apt install pip
+sudo apt install mcrypt --fix-missing
+sudo apt install mcrypt
+sudo apt install libmcrypt-dev
+sudo apt install libmhash-dev
+sudo apt install libjpeg62-turbo8-dev
+sudo apt install pip
+sudo pip3 install pytransform
+sudo apt install cmake
+sudo apt install gedit
+
+
 #Github Repos
 
+sudo git clone https://github.com/nlscc/unpyarmor /usr/share/tools/unpyarmor
+sudo git clone https://github.com/RickdeJager/stegseek /usr/share/tools/stegseek
 sudo git clone https://github.com/danielmiessler/SecLists /usr/share/wordlists/SecLists
 sudo git clone https://github.com/flozz/p0wny-shell /usr/share/tools/p0wny-shell
 sudo git clone https://github.com/SecureAuthCorp/impacket /opt/impacket
@@ -21,6 +41,17 @@ sudo git clone https://github.com/ropnop/kerbrute /opt/kerbrute
 sudo git clone https://github.com/tmux-plugins/tmux-logging/ /opt/tmux-logging/
 sudo git clone https://github.com/21y4d/nmapAutomator /usr/share/tools/nmapAutomator
 sudo git clone https://github.com/Tib3rius/AutoRecon /usr/share/tools/AutoRecon
+sudo git clone https://github.com/praetorian-inc/Hob0Rules /usr/share/wordlists
+
+#RockYou
+
+sudo tar -xvf /usr/share/wordlists/SecLists/Passwords/Leaked-Databases/rockyou.txt.tar
+sudo cp /usr/share/wordlists/SecLists/Passwords/Leaked-Databases/rockyou.txt /usr/share/wordlists/rockyou2021.txt
+
+#UnPyarmor
+
+sudo python3 /usr/share/tools/unpyarmor/setup.py install
+
 
 #TMUX
 
