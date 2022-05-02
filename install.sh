@@ -28,6 +28,7 @@ sudo apt install pip
 sudo pip3 install pytransform
 sudo apt install cmake
 sudo apt install gedit
+sudo apt install gimp
 
 
 #Github Repos
@@ -41,7 +42,11 @@ sudo git clone https://github.com/ropnop/kerbrute /opt/kerbrute
 sudo git clone https://github.com/tmux-plugins/tmux-logging/ /opt/tmux-logging/
 sudo git clone https://github.com/21y4d/nmapAutomator /usr/share/tools/nmapAutomator
 sudo git clone https://github.com/Tib3rius/AutoRecon /usr/share/tools/AutoRecon
-sudo git clone https://github.com/praetorian-inc/Hob0Rules /usr/share/wordlists
+sudo git clone https://github.com/praetorian-inc/Hob0Rules /usr/share/wordlists/Hob0Rules
+sudo git clone https://github.com/trustedsec/unicorn /usr/share/unicorn2
+sudo git clone https://github.com/1N3/IntruderPayloads /usr/share/wordlists/Intruder
+sudo git clone https://github.com/egre55/windows-kernel-exploits /usr/share/tools/PrivEsc/Windows
+
 
 #RockYou
 
@@ -130,6 +135,10 @@ sudo apt install docker.io -y
 
 sudo docker pull specterops/bloodhound-neo4j
 #alias bloodhound ='sudo docker run -p 7474:7474 -p 7687:7687 specterops/bloodhound-neo4j' (See bashrc/zshrc)
+
+#Misc curls
+sudo mkdir /usr/share/PrivEsc/Linux/Kernel
+sudo curl https://raw.githubusercontent.com/firefart/dirtycow/master/dirty.c > /usr/share/PrivEsc/Linux/Kernel/dirtycow.c
 
 #cleanup
 apt autoremove
