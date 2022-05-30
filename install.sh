@@ -18,6 +18,19 @@ sudo pip3 install pycryptodome
 sudo pip3 install pyarmor
 sudo pip3 install python-nmap
 sudo pip3 install click
+sudo pip3 install Net
+sudo pip3 install py2neo
+sudo pip3 install google.auth
+sudo pip3 install googleapiclient
+sudo pip3 install googleapi
+sudo pip3 install validators
+sudo pip3 install jwt
+sudo pip3 install kubernetes
+sudo pip3 install google.cloud
+sudo pip3 install google-cloud-secret-manager
+sudo pip3 install PyGithub
+sudo pip3 install pycircleci
+sudo pip3 install concoursepy
 sudo apt install pip
 sudo apt install mcrypt --fix-missing
 sudo apt install mcrypt
@@ -32,7 +45,7 @@ sudo apt install gimp
 
 
 #Github Repos
-
+sudo mkdir /usr/share/PrivEsc
 sudo git clone https://github.com/nlscc/unpyarmor /usr/share/tools/unpyarmor
 sudo git clone https://github.com/RickdeJager/stegseek /usr/share/tools/stegseek
 sudo git clone https://github.com/danielmiessler/SecLists /usr/share/wordlists/SecLists
@@ -46,6 +59,8 @@ sudo git clone https://github.com/praetorian-inc/Hob0Rules /usr/share/wordlists/
 sudo git clone https://github.com/trustedsec/unicorn /usr/share/unicorn2
 sudo git clone https://github.com/1N3/IntruderPayloads /usr/share/wordlists/Intruder
 sudo git clone https://github.com/egre55/windows-kernel-exploits /usr/share/tools/PrivEsc/Windows
+sudo git clone https://github.com/carlospolop/PurplePanda /usr/share/tools/PurplePanda
+sudo git clone https://github.com/Almorabea/Polkit-exploit /usr/share/tools/PrivEsc/Polkit-exploit
 
 
 #RockYou
