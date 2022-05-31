@@ -61,6 +61,8 @@ sudo git clone https://github.com/1N3/IntruderPayloads /usr/share/wordlists/Intr
 sudo git clone https://github.com/egre55/windows-kernel-exploits /usr/share/tools/PrivEsc/Windows
 sudo git clone https://github.com/carlospolop/PurplePanda /usr/share/tools/PurplePanda
 sudo git clone https://github.com/Almorabea/Polkit-exploit /usr/share/tools/PrivEsc/Polkit-exploit
+sudo git clone https://github.com/s0md3v/XSStrike.git /usr/share/tools/xsstrike
+sudo pip3 install -r /usr/share/tools/xsstrike/requirements.txt
 
 
 #RockYou
