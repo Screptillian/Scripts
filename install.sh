@@ -12,8 +12,15 @@ sudo apt upgrade -y
 sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 sudo mkdir /usr/share/tools
 
+
+#bashrc/zshrc config
+curl https://raw.githubusercontent.com/Screptillian/Scripts/main/.bashrc > ~/.bashrc
+curl https://raw.githubusercontent.com/Screptillian/Scripts/main/.zshrc > ~/.zshrc
+
 #Misc
 sudo apt install sherlock -y
+sudo apt install python3-argcomplete -y
+sudo pip3 install argcomplete
 sudo pip3 install pycryptodome
 sudo pip3 install pyarmor
 sudo pip3 install python-nmap
@@ -62,7 +69,9 @@ sudo git clone https://github.com/egre55/windows-kernel-exploits /usr/share/tool
 sudo git clone https://github.com/carlospolop/PurplePanda /usr/share/tools/PurplePanda
 sudo git clone https://github.com/Almorabea/Polkit-exploit /usr/share/tools/PrivEsc/Polkit-exploit
 sudo git clone https://github.com/s0md3v/XSStrike.git /usr/share/tools/xsstrike
+sudo git clone https://github.com/Bashfuscator/Bashfuscator /usr/share/tools/Bashfuscator
 sudo pip3 install -r /usr/share/tools/xsstrike/requirements.txt
+sudo python3 /usr/share/tools/Bashfuscator/setup.py install --user
 
 
 #RockYou
@@ -115,10 +124,6 @@ sudo iptables -A INPUT -p udp -m state --state NEW -j LOG --log-prefix "IPTables
 sudo iptables -A INPUT -p icmp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection:"
 
 #You can view the logs in /var/log/messages
-
-#bashrc/zshrc config
-curl https://raw.githubusercontent.com/Screptillian/Scripts/main/.bashrc > ~/.bashrc
-curl https://raw.githubusercontent.com/Screptillian/Scripts/main/.zshrc > ~/.zshrc
 
 #smb config
 sudo chmod +w /etc/samba/smb.conf
