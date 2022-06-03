@@ -19,6 +19,8 @@ curl https://raw.githubusercontent.com/Screptillian/Scripts/main/.zshrc > ~/.zsh
 
 #Misc
 sudo apt install sherlock -y
+sudo apt install python3-psutil
+sudo apt install x11-xfs-utils
 sudo apt install python3-argcomplete -y
 sudo pip3 install argcomplete
 sudo pip3 install pycryptodome
