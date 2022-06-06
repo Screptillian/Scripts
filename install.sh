@@ -18,6 +18,7 @@ curl https://raw.githubusercontent.com/Screptillian/Scripts/main/.bashrc > ~/.ba
 curl https://raw.githubusercontent.com/Screptillian/Scripts/main/.zshrc > ~/.zshrc
 
 #Misc
+sudo apt install jq
 sudo apt install sherlock -y
 sudo apt install python3-psutil
 sudo apt install x11-xfs-utils
