@@ -3,17 +3,22 @@
 ## Present on all SonicWalls
 
 LAN
+
 WAN
+
 DMZ
+
 VPN
+
 SSLVPN
+
 MULTICAST
 
 ## Present on SonicWalls with wireless interfaces
 
 WLAN
 
-# Base Default Zone Configuration
+# Base Default Zone Configuration (Present on first boot)
 
 ## LAN
 
@@ -193,7 +198,7 @@ wireless
    
 ## DMZ
  - This is the reference trust level of all non-LAN zoned networks, DMZ automatically has access to lower trusted networks (public/untrusted) because of the nature of the industries standard
-design of a [https://www.barracuda.com/glossary/dmz-network](DMZ).
+design of a [DMZ](https://www.barracuda.com/glossary/dmz-network).
  - All Custom Zones should be designed with DMZ level security <b>OR</b> lower.
 
 ## VPN
