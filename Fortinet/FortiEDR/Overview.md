@@ -73,12 +73,12 @@
 
 
 # Traffic Flow
- - 1. Collector to Aggregator
-  - Connect to Aggregator
-  - Aggregator responds with license and configuration file
-    - Configuration file includes a list of cores that the collector is allowed to communicate with.
-      - Up to 11 cores per aggregator
-  - Collector then tests the connections to each core and selects the one with the fastest connection
+ - Collector to Aggregator
+    - Connect to Aggregator
+    - Aggregator responds with license and configuration file
+      - Configuration file includes a list of cores that the collector is allowed to communicate with.
+        - Up to 11 cores per aggregator
+    - Collector then tests the connections to each core and selects the one with the fastest connection
   - Core handles policy enforcement, if the collector detects malicious/suspicious activities, the collector sends the core compressed OS metadata to the core for evaluation
   - Core sends back a GO or NO GO on the event based on existing policies, then sends alert data and policy action to the aggregator and FortiEDR Cloud Services (FCS), aggregator then forwards the event to the Central Manager and , Central Manager then displays it in the GUI.
     - In the event of malicious/suspicious activity, in addition to alert data and policy action being sent to FortiEDR Cloud Services (FCS) it also sends information about executables detected on each collector to the threat hunting repository.
