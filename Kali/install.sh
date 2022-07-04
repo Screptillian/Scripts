@@ -57,6 +57,7 @@ sudo apt install gimp
 
 #Github Repos
 sudo mkdir /usr/share/PrivEsc
+sudo mkdir /usr/share/tools/tplmap/
 sudo git clone https://github.com/nlscc/unpyarmor /usr/share/tools/unpyarmor
 sudo git clone https://github.com/RickdeJager/stegseek /usr/share/tools/stegseek
 sudo git clone https://github.com/danielmiessler/SecLists /usr/share/wordlists/SecLists
@@ -75,6 +76,7 @@ sudo git clone https://github.com/Almorabea/Polkit-exploit /usr/share/tools/Priv
 sudo git clone https://github.com/ly4k/PwnKit /usr/share/tools/PrivEsc/PwnKit
 sudo git clone https://github.com/s0md3v/XSStrike.git /usr/share/tools/xsstrike
 sudo git clone https://github.com/Bashfuscator/Bashfuscator /usr/share/tools/Bashfuscator
+sudo git clone https://github.com/epinna/tplmap /usr/share/tools/tplmap/
 sudo pip3 install -r /usr/share/tools/xsstrike/requirements.txt
 sudo python3 /usr/share/tools/Bashfuscator/setup.py install --user
 
