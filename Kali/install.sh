@@ -77,6 +77,7 @@ sudo git clone https://github.com/ly4k/PwnKit /usr/share/tools/PrivEsc/PwnKit
 sudo git clone https://github.com/s0md3v/XSStrike.git /usr/share/tools/xsstrike
 sudo git clone https://github.com/Bashfuscator/Bashfuscator /usr/share/tools/Bashfuscator
 sudo git clone https://github.com/epinna/tplmap /usr/share/tools/tplmap/
+sudo chmod +x /usr/share/tools/tplmap/tplmap/tplmap.py
 sudo pip3 install -r /usr/share/tools/xsstrike/requirements.txt
 sudo python3 /usr/share/tools/Bashfuscator/setup.py install --user
 
