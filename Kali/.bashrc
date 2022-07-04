@@ -116,6 +116,7 @@ alias kerbrute='python3 /opt/kerbrute/kerbrute.py'
 alias impacket='python3 /usr/share/doc/python3-impacket/examples/'
 alias bloodhound='docker run -p 7474:7474 -p 7687:7687 specterops/bloodhound-neo4j'
 alias xsstrike='python /usr/share/tools/xsstrike.py'
+alias tplmap='python3 /usr/share/tools/tplmap/tplmap/tplmap.py'
 
 
 # Alias definitions.
