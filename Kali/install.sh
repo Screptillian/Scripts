@@ -53,6 +53,7 @@ sudo pip3 install pytransform
 sudo apt install cmake
 sudo apt install gedit
 sudo apt install gimp
+sudo apt install pwncat
 
 
 #Github Repos
