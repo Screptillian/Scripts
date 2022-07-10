@@ -14,8 +14,8 @@ sudo mkdir /usr/share/tools
 
 
 #bashrc/zshrc config
-curl https://raw.githubusercontent.com/Screptillian/Scripts/main/.bashrc > ~/.bashrc
-curl https://raw.githubusercontent.com/Screptillian/Scripts/main/.zshrc > ~/.zshrc
+curl https://raw.githubusercontent.com/Screptillian/Scripts/main/Kali/.bashrc > ~/.bashrc
+curl https://raw.githubusercontent.com/Screptillian/Scripts/main/Kali/.zshrc > ~/.zshrc
 
 #Misc
 sudo apt install jq
