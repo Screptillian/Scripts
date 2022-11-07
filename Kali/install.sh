@@ -172,6 +172,9 @@ sudo docker pull specterops/bloodhound-neo4j
 sudo mkdir /usr/share/PrivEsc/Linux/Kernel
 sudo curl https://raw.githubusercontent.com/firefart/dirtycow/master/dirty.c > /usr/share/PrivEsc/Linux/Kernel/dirtycow.c
 
+# C2/Persistence
+curl https://sliver.sh/install|sudo bash
+
 #cleanup
 apt autoremove
 #shutdown -r now
